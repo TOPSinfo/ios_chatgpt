@@ -17,6 +17,7 @@ This ChatGPTStreamAPI demo
 The demo uses ChatGPTSwift package, which uses chat gpt stream api.
 The server will stream chunks of data until complete, the method AsyncThrowingStream which you can loop using For-Loop like so:
 
+````
 Task {
     do {
         let stream = try await api.sendMessageStream(text: "What is ChatGPT?")
@@ -27,6 +28,7 @@ Task {
         print(error.localizedDescription)
     }
 }
+````
 
 # Table of Contents
 
