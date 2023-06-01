@@ -9,7 +9,7 @@ import Foundation
 //MARK:- OpenAISecretKey
 struct OpenAISecretKey {
     public static let SECRETKEY = "ENTER-YOUR-SECRETE-KEY-HERE"
-//    public static let SECRETKEY = "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"
+//    public static let SECRETKEY = "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"
 }
 
 //MARK:- String Extension

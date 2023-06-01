@@ -1,6 +1,6 @@
 # ChatGPTStreamAPI
-This ChatGPTStreamAPI Demo app is very simple and easy to understand. 
-This ChatGPTStreamAPI demo 
+This ChatGPTStreamAPI Demo app is very simple and easy to understand.
+It gives immidiate output of your search text. 
 
 ![video](/Media/ChatGPTStreamAPI.gif)
 
