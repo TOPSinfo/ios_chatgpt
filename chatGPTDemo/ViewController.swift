@@ -61,7 +61,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         setupLayout()
         setUpSegment()
-        // Do any additional setup after loading the view.
     }
     
     //MARK: setupLayout
@@ -161,6 +160,10 @@ class ViewController: UIViewController, UITextViewDelegate {
             
             let isFind = isFind == .Text ? true:false
             OpenAIManager.shared.processPrompt(prompt: ("Human: \(strQuestion)\n"), isType: isFind) { [self] reponse in
+                
+                if reponse == "Error::nothing returned" {
+                    appDelegate.showAlert(strMessage: "There is some problem. Please check your API Key", vc: self)
+                }
                 self.stopBlink()
                 self.sendMessage(question: reponse.trime(), isSend: false)
             }
@@ -209,6 +212,9 @@ class ViewController: UIViewController, UITextViewDelegate {
 
                         self.stopBlink()
                         self.reloadTblWithImage()
+                    }else{
+                        appDelegate.showAlert(strMessage: "There is some problem. Please check your API Key", vc: self)
+                        stopBlink()
                     }
                 }
             }
@@ -271,6 +277,10 @@ class ViewController: UIViewController, UITextViewDelegate {
             }else{
                 self.lblAskme.isHidden = true
             }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            self.cnstQuestion.constant = 40
         }
     }
     

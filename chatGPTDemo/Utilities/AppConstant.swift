@@ -13,8 +13,9 @@ struct Constant {
 }
 
 //MARK:- OpenAISecretKey
-struct OpenAISecretKey {    
-    public static let SECRETKEY = "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"
+struct OpenAISecretKey {
+    public static let SECRETKEY = "ENTER-YOUR-SECRETE-KEY-HERE"
+//    public static let SECRETKEY = "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"
 }
 
 //MARK:- String Extension
