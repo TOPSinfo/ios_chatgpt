@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8893DEED2A289C90002396CB /* ChatGPTStreamAPI.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8893DEEB2A289C90002396CB /* ChatGPTStreamAPI.gif */; };
+		8893DEEE2A289C90002396CB /* ChatGPTStreamAPI.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8893DEEC2A289C90002396CB /* ChatGPTStreamAPI.mp4 */; };
 		88F0987E2A286B92002C61C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F0987D2A286B92002C61C5 /* AppDelegate.swift */; };
 		88F098802A286B92002C61C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F0987F2A286B92002C61C5 /* SceneDelegate.swift */; };
 		88F098822A286B92002C61C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F098812A286B92002C61C5 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8893DEEB2A289C90002396CB /* ChatGPTStreamAPI.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ChatGPTStreamAPI.gif; sourceTree = "<group>"; };
+		8893DEEC2A289C90002396CB /* ChatGPTStreamAPI.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChatGPTStreamAPI.mp4; sourceTree = "<group>"; };
 		88F0987A2A286B92002C61C5 /* ChatGPTStreamAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTStreamAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F0987D2A286B92002C61C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F0987F2A286B92002C61C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8893DEEA2A289C90002396CB /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				8893DEEB2A289C90002396CB /* ChatGPTStreamAPI.gif */,
+				8893DEEC2A289C90002396CB /* ChatGPTStreamAPI.mp4 */,
+			);
+			path = Media;
+			sourceTree = SOURCE_ROOT;
+		};
 		88F098712A286B92002C61C5 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +116,7 @@
 		88F0987C2A286B92002C61C5 /* ChatGPTStreamAPI */ = {
 			isa = PBXGroup;
 			children = (
+				8893DEEA2A289C90002396CB /* Media */,
 				88F098B02A286D39002C61C5 /* AppConstant.swift */,
 				88F098812A286B92002C61C5 /* ViewController.swift */,
 				88F0987D2A286B92002C61C5 /* AppDelegate.swift */,
@@ -243,7 +257,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				88F0988A2A286B93002C61C5 /* LaunchScreen.storyboard in Resources */,
+				8893DEED2A289C90002396CB /* ChatGPTStreamAPI.gif in Resources */,
 				88F098872A286B93002C61C5 /* Assets.xcassets in Resources */,
+				8893DEEE2A289C90002396CB /* ChatGPTStreamAPI.mp4 in Resources */,
 				88F098852A286B92002C61C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
